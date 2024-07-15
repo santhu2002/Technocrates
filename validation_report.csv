@@ -1,0 +1,7 @@
+record,errors
+"['1', 'John Doe', '25', 'john.doe@example.com']",No errors
+"['2', 'Jane Smith', '17', 'jane.smith@domain.com']",['Age should be at least 18.0']
+"['3', 'Bob Johnson', '35', 'bob.johnson@example']",No errors
+"['4', '', '28', 'missing.email@example.com']",['Name is required']
+"['101', 'Too Large', '150', 'toolarge@example.com']","['ID should be at most 100.0', 'Age should be at most 99.0']"
+"['5', 'Invalid Name', '30', 'invalid@name.com']",No errors

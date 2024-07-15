@@ -1,0 +1,6 @@
+1,John Doe,25,john.doe@example.com
+2,Jane Smith,17,jane.smith@domain.com
+3,Bob Johnson,35,bob.johnson@example
+4,,28,missing.email@example.com
+101,Too Large,150,toolarge@example.com
+5,Invalid Name,30,invalid@name.com
