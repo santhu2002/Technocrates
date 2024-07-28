@@ -1,7 +1,7 @@
 record,errors
-"['1', 'John Doe', '25', 'john.doe@example.com']",No errors
-"['2', 'Jane Smith', '17', 'jane.smith@domain.com']",['Age should be at least 18.0']
-"['3', 'Bob Johnson', '35', 'bob.johnson@example']",No errors
-"['4', '', '28', 'missing.email@example.com']",['Name is required']
-"['101', 'Too Large', '150', 'toolarge@example.com']","['ID should be at most 100.0', 'Age should be at most 99.0']"
-"['5', 'Invalid Name', '30', 'invalid@name.com']",No errors
+"['1', 'John Doe', '25', '10000.00', 'john.doeexample.com']","['amount does not match the pattern ^\\d{1,6}\\.\\d{2}$', 'Email does not match the pattern ^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+.[a-zA-Z]{2,}$']"
+"['2', 'Jane Smith', '17', '', 'jane.smith@domain.com']","['Age should be at least 18.0', 'amount is required']"
+"['3', 'Bob Johnson', '35', '99999999', 'bob.johnson@example']","['amount does not match the pattern ^\\d{1,6}\\.\\d{2}$']"
+"['4', '', '28', '', 'missing.email@example.com']","['Name is required', 'amount is required']"
+"['101', 'Too Large', '150', 'aad', 'toolarge@example.com']","['ID should be at most 100.0', 'Age should be at most 99.0', 'Invalid value for amount: expected float, got aad']"
+"['5', 'Invalid Name', '30', '123', 'invalid@name.com']","['amount does not match the pattern ^\\d{1,6}\\.\\d{2}$']"

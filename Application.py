@@ -49,8 +49,10 @@ def validate_records(records, data_fields):
                         validation_errors.append(f"{field} should be at most {max_val}")
                 
                 # Validate regex for string types
-                if dtype == 'str' and regex and not re.match(regex, value):
+                if (dtype == 'str' or dtype=='float') and regex and not re.match(regex, str(value)):
                     validation_errors.append(f"{field} does not match the pattern {regex}")
+                # if value:
+                #     print(re.match(regex,value),value)
             
             except ValueError:
                 validation_errors.append(f"Invalid value for {field}: expected {dtype}, got {record[idx]}")
